@@ -116,7 +116,7 @@ mark {
   margin-top: 0.5em;
   margin-bottom: 24px;
   height: 1.5px;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 
@@ -128,10 +128,10 @@ mark {
 .cm-s-obsidian span.cm-hashtag-begin, 
 .cm-s-obsidian span.cm-hashtag-end,
 a.tag {
-  background-color: #464a53 !important;
-  color: #bbc0c5 !important;
-  padding-bottom: 2px;
-  padding-top: 2px;
+  background-color: var(--background-tag);
+  color: var(--text-nav-selected);
+  padding-bottom: 0px;
+  padding-top: 0px;
   text-decoration: none;
   font-family: var(--font-family-editor);
   font-size: 0.95em;
@@ -691,6 +691,7 @@ but font weight does. */
   font-size: 16px;
   font-weight: bold;
   color: var(--text-title-h6);
+  display: none;
 }
 
 
@@ -1003,7 +1004,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-quote {
 
 div:not(.CodeMirror-activeline)>.HyperMD-quote {
     border-left: 5px solid var(--blockquote-border);
-    padding-left: 13px !important;
+    padding-left: 9px !important;/* or 13 */
     margin-left: 0px;
     margin-top: 0em;
 }
